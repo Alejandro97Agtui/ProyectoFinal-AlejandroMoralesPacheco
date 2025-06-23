@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+
+/* Boton de Whatsapp */
+
+.boton-whatsapp{
+    position: fixed;
+    bottom: .5em;
+    right: .2em;
+    background-color: #4dc247;
+    font-size: 2em;
+    padding: .3em;
+    border-radius: 100%;
+    color: #fff;
+    z-index: 1;
+}
+
+.boton-whatsapp:hover{
+    background-color: #128C7E;
+    transition: background-color .5s ease-in-out;
+}
+
+/* Fin Boton de Whatsapp */
+
+/* ------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------- */
+
+/*MENU DE NAVEGACION*/
+
+.logo {
+    width: 180px;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.mainheader .middleheader {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------------------- */
+
+.navbar {
+    background-color: lightsalmon;
+}
+
+.menu1 {
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu1 li {
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.navbar .menu1 {
+    margin: 0px 100px;
+    text-align: center;
+}
+
+.menu1 li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu1 li a:hover {
+    color: brown;
+}
+
+/* ------------------------------------------------------------------- */
+
+.bg-image {
+    /* background-image: url(Assets/contact.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+.bg-image .text1 {
+    color: rgba(187, 17, 88, 0.726);
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 30px 0px;
+    
+}
+
+
+/* ------------------------------------------------------------------- */
+
+/* Main */
+
+/*Sección de Contacto*/
+
+.seccioncontacto {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.div1, .div2 {
+    min-width: 200px;
+    margin: 10px;
+    flex: 1;
+    text-align: center;
+    background-color: #37c9d3;
+    color: white;
+    border-radius: 20px;
+}
+
+
+.div1 .lista2 {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0px 40px;
+} 
+
+.div1 .lista2 li {
+    margin-bottom: 10px;
+}
+
+/*Formulario*/
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div2 h3 {
+    margin-bottom: 12px;
+}
+
+#formulario input,  #formulario textarea{
+    margin: 5px 0px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 95%;
+}
+
+textarea{
+    min-width: 95%;
+    max-width: fit-content;
+    max-height: 100px;
+}
+
+#formulario button {
+    width: 95%;
+    background-color: #494848;
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#formulario button:hover {
+    background-color: #2e2525;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------- */
+
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 100px; /* Ajusta el tamaño según necesites */
+    margin-right: 20px;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.footer-content h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-content p {
+    font-size: 14px;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    margin: 10px 0;
+}
+
+.socials li {
+    margin: 0 15px;
+}
+
+.socials a {
+    color: white;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: #FFD700; /* Efecto hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footer-text h3, .footer-text p,  .footer-bottom p{
+    margin: 10px 0px;
+}
+
+.container-desarrollador{
+    padding: 6px 0;
+    background-color: rgba(104, 91, 91, 0.863);
+    text-align: center;
+}
+
+.desarrollador{
+    font-size: 15px;
+    color: #fff;
+}
+
+.desarrollador b{
+    font-size: 17px;
+    color: #FFD700;
+}
