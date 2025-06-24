@@ -1,3 +1,7 @@
+:root{
+    --colorprincipal-texto: white;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -55,27 +59,41 @@
 
 .navbar {
     background-color: lightsalmon;
+    position: relative;
 }
+
+.contenedor-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.btn-menu {
+    display: none; /* Oculta el botón por defecto */
+    color: var(--colorprincipal-texto);
+    font-size: 24px;
+}
+
+
 
 .menu1 {
     list-style: none;
     font-size: 18px;
     font-weight: bold;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    transition: all 0.3s ease;
 }
 
 .menu1 li {
-    display: inline-block;
-    margin: 20px 20px;
-}
-
-.navbar .menu1 {
-    margin: 0px 100px;
-    text-align: center;
+    margin: 20px;
 }
 
 .menu1 li a {
     text-decoration: none;
-    color: white;
+    color: var(--colorprincipal-texto);
 }
 
 .menu1 li a:hover {
@@ -264,3 +282,214 @@ footer {
     font-size: 17px;
     color: #FFD700;
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+    /* --- Header y Logo --- */
+    .mainheader .middleheader {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    /* --- Menú de Navegación --- */
+    .contenedor-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .btn-menu {
+        display: block; /* Muestra el botón en móviles */
+        margin: 10px auto;
+    }
+    
+    .menu1 {
+        display: none; /* Oculta el menú por defecto en móviles */
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu1.active {
+        display: flex; /* Muestra el menú cuando tiene la clase active */
+    }
+    
+    .menu1 li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .navbar .menu1 {
+        margin: 0;
+    }
+
+    .menu1 li a:hover {
+        color: brown;
+    }
+}
+
+
+/* ------------------------------------------------------------------- */
+/* RESPONSIVE PARA MÓVILES (max-width: 768px) */
+/* ------------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    /* --- Header y Logo --- */
+    .mainheader .middleheader {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    /* --- Menú de Navegación --- */
+
+    .contenedor-navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .btn-menu {
+        display: block; /* Muestra el botón en móviles */
+        margin: 10px auto;
+    }
+    
+    .menu1 {
+        display: none; /* Oculta el menú por defecto en móviles */
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .menu1.active {
+        display: flex; /* Muestra el menú cuando tiene la clase active */
+    }
+    
+    .menu1 li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .navbar .menu1 {
+        margin: 0;
+    }
+
+    .menu1 li a:hover {
+        color: brown;
+    }
+
+    
+    /* --- Hero Image --- */
+    .bg-image {
+        height: auto;
+        min-height: 150px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .bg-image .text1 {
+        padding: 30px 15px;
+        font-size: 24px;
+    }
+
+    /* --- Sección de Contacto --- */
+    .seccioncontacto {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .div1, .div2 {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .div1 .lista2 {
+        margin: 15px 0 25px;
+    }
+
+    .div1 .lista2 li {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    audio {
+        width: 100%;
+    }
+
+    #formulario input, 
+    #formulario textarea,
+    #formulario button {
+        width: 100%;
+    }
+
+    textarea {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* --- Footer --- */
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+
+    /* --- Botón de WhatsApp --- */
+    .boton-whatsapp {
+        font-size: 1.5em;
+        bottom: 1em;
+        right: 1em;
+    }
+}
+
+/* Pequeños ajustes para pantallas muy pequeñas (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .bg-image .text1 {
+        font-size: 20px;
+        padding: 25px 10px;
+    }
+
+    .div1 h3, .div2 h3 {
+        font-size: 20px;
+    }
+
+    .div1 .lista2 li {
+        font-size: 14px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    #formulario input, 
+    #formulario textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #formulario button {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
